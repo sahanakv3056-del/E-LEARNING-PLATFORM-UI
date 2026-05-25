@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sanjana E-Learning</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LOGIN PAGE -->
+
+    <div id="loginPage">
+
+        <div class="login-box">
+
+            <h1>Sanjana E-Learning</h1>
+
+            <p>Login to Continue</p>
+
+            <input type="text"
+                   id="username"
+                   placeholder="Enter Username">
+
+            <input type="password"
+                   id="password"
+                   placeholder="Enter Password">
+
+            <button onclick="login()">
+                Login
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- MAIN APP -->
+
+    <div id="app">
+
+        <!-- NAVBAR -->
+
+        <nav>
+
+            <div class="logo">
+                🎓 Sanjana E-Learning
+            </div>
+
+            <div class="nav-links">
+
+                <a onclick="showSection('home')">
+                    Home
+                </a>
+
+                <a onclick="showSection('courses')">
+                    Courses
+                </a>
+
+                <a onclick="showSection('dashboard')">
+                    Dashboard
+                </a>
+
+                <a onclick="showSection('profile')">
+                    Profile
+                </a>
+
+                <a onclick="logout()">
+                    Logout
+                </a>
+
+            </div>
+
+        </nav>
+
+        <!-- HOME -->
+
+        <section id="home"
+                 class="section active">
+
+            <h1>
+                Welcome,
+                <span id="userDisplay"></span>
+            </h1>
+
+            <p>
+                Learn Skills Anytime 🚀
+            </p>
+
+        </section>
+
+        <!-- COURSES -->
+
+        <section id="courses"
+                 class="section">
+
+            <h2>Popular Courses</h2>
+
+            <div class="course-container">
+
+                <div class="course-card"
+                     onclick="openCourse(
+                     'HTML & CSS',
+                     'https://www.youtube.com/embed/HBqWsrqK89U',
+                     'https://drive.google.com')">
+
+                    <h3>HTML & CSS</h3>
+
+                    <p>Frontend Design Basics</p>
+
+                </div>
+
+                <div class="course-card"
+                     onclick="openCourse(
+                     'JavaScript',
+                     'https://www.youtube.com/embed/ajdRvxDWH4w',
+                     'https://drive.google.com')">
+
+                    <h3>JavaScript</h3>
+
+                    <p>Interactive Web Development</p>
+
+                </div>
+
+                <div class="course-card"
+                     onclick="openCourse(
+                     'Python',
+                     'https://www.youtube.com/embed/t2_Q2BRzeEE',
+                     'https://drive.google.com')">
+
+                    <h3>Python</h3>
+
+                    <p>Programming Fundamentals</p>
+
+                </div>
+
+                <div class="course-card"
+                     onclick="openCourse(
+                     'SQL',
+                     'https://www.youtube.com/embed/hlGoQC332VM',
+                     'https://drive.google.com')">
+
+                    <h3>SQL</h3>
+
+                    <p>Database Management</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PLAYER -->
+
+        <section id="player"
+                 class="section">
+
+            <h2 id="courseTitle"></h2>
+
+            <iframe id="videoPlayer"></iframe>
+
+            <br>
+
+            <a id="notesLink"
+               target="_blank">
+                📘 Open Notes
+            </a>
+
+            <br><br>
+
+            <button onclick="enroll()">
+                Enroll Course
+            </button>
+
+            <button onclick="showSection('courses')">
+                Back
+            </button>
+
+        </section>
+
+        <!-- DASHBOARD -->
+
+        <section id="dashboard"
+                 class="section">
+
+            <h2>Your Progress</h2>
+
+            <div id="progressBox"></div>
+
+        </section>
+
+        <!-- PROFILE -->
+
+        <section id="profile"
+                 class="section">
+
+            <div class="profile-card">
+
+                <h2>Profile</h2>
+
+                <p>
+                    Username:
+                    <span id="profileUser"></span>
+                </p>
+
+                <p>
+                    Password:
+                    sanjana
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

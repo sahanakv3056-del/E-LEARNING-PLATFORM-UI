@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #eef2ff;
+}
+
+/* LOGIN PAGE */
+
+#loginPage {
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: linear-gradient(135deg,
+    #667eea,
+    #764ba2);
+}
+
+.login-box {
+
+    background: white;
+
+    padding: 40px;
+
+    width: 350px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.login-box h1 {
+
+    margin-bottom: 10px;
+
+    color: #333;
+}
+
+.login-box p {
+
+    margin-bottom: 20px;
+
+    color: gray;
+}
+
+.login-box input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 10px 0;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+}
+
+/* APP */
+
+#app {
+
+    display: none;
+}
+
+/* NAVBAR */
+
+nav {
+
+    background: #222;
+
+    color: white;
+
+    padding: 15px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.logo {
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+.nav-links a {
+
+    margin-left: 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+
+    color: #00d2ff;
+}
+
+/* SECTIONS */
+
+.section {
+
+    display: none;
+
+    padding: 30px;
+}
+
+.section.active {
+
+    display: block;
+}
+
+/* HOME */
+
+#home {
+
+    text-align: center;
+
+    margin-top: 50px;
+}
+
+#home h1 {
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+/* COURSES */
+
+.course-container {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+.course-card {
+
+    background: white;
+
+    width: 230px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.course-card:hover {
+
+    transform: translateY(-5px);
+
+    background: #dbeafe;
+}
+
+.course-card h3 {
+
+    margin-bottom: 10px;
+}
+
+/* BUTTONS */
+
+button {
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+    margin: 10px;
+
+    transition: 0.3s;
+}
+
+button:hover {
+
+    background: #1d4ed8;
+}
+
+/* PLAYER */
+
+#player {
+
+    text-align: center;
+}
+
+#videoPlayer {
+
+    width: 80%;
+
+    height: 450px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    margin-top: 20px;
+}
+
+/* NOTES */
+
+#notesLink {
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    color: #2563eb;
+}
+
+/* DASHBOARD */
+
+.progress-card {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    margin: 15px 0;
+
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* PROFILE */
+
+.profile-card {
+
+    background: white;
+
+    width: 350px;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    margin: auto;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
